@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #D4D5D9;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #010B12;
+}
+
+.totals, .filters, form, #entries-list {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.totals div {
+    font-size: 1.2em;
+    color: #333;
+    margin: 5px 0;
+}
+
+#entry-form input, #entry-form select, #entry-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+#reset-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.filters label {
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+#entries-list {
+    list-style-type: none;
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #e9f5ff;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.entry-income { background-color: #d4f0d2; }
+.entry-expense { background-color: #f0d2d2; }
+
+.entry button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .totals, #entry-form, .filters, #entries-list {
+        font-size: 0.9em;
+    }
+}
